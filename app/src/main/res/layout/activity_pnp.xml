@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pnp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.android.cpuscheduling.pnp">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card1"
+        card_view:cardBackgroundColor="#77070c41"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Priority (non-preemptive)"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/m2d"
+
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:layout_margin="10dp"
+
+            android:textColor="#FFFFFF"
+            android:background="@drawable/my_button"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonClick" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="DELETE"
+            android:background="@drawable/my_button"
+            android:layout_margin="10dp"
+
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:id="@+id/delete" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/m4"
+        android:layout_weight="4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/m2d"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#000000"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:id="@+id/textview1pnp"
+    android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="@drawable/m2d"
+
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="RESET"
+            android:layout_margin="10dp"
+
+            android:textColor="#FFFFFF"
+            android:background="@drawable/my_button"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:id="@+id/reset" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="COMPUTE"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+
+            android:textSize="20sp"
+            android:background="@drawable/my_button"
+            android:layout_height="match_parent"
+            android:id="@+id/compute" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
